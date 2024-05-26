@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of Even & Odd Numbers</title>
+</head>
+<body>
+    Addition of Even & Odd Numbers 1-100.
+    <script>
+
+        let i = 1 ;
+        let EvenSum = 0;
+        let OddSum = 0;
+        
+        while(i<=100){
+            if(i%2 == 0 ){
+                EvenSum = EvenSum + i;
+            }
+            else{
+                OddSum = OddSum +i;
+            }
+            i++;
+        }
+        console.log("Sum of Even Numbers is : "+ EvenSum);
+        console.log("Sum of Odd Numbers is : "+ OddSum); 
+
+    </script>
+</body>
+</html>

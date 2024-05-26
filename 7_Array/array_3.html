@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 3</title>
+</head>
+<body>
+    <script>
+
+        // // Ex-1  Print the arr value which index is odd
+        // let arr = [14,8,17,4,5,3,12];
+        // let len = arr.length;
+        // for(let i=0; i<len; i++){
+        //     if(i%2 != 0){
+        //         console.log(arr[i]);
+        //     }
+        // }
+
+        // // Ex-2 take the number from user search it in array how much time it is present
+        // let arr = [4,2,4,5,8,5,2,4,2];
+        // let len = arr.length;
+        // let count = 0;
+        // let num = parseInt(prompt("Enter the number"));
+        // for(let i=0; i<len; i++)
+        // {
+        //     if(arr[i] == num)
+        //     {
+        //         count ++ ;
+        //     }
+        // }
+        // console.log("The count of " + num + " is "+ count + " times");
+
+
+        // // Ex-3 do addition of array values in range of 3 to 7
+        // let arr = [4,2,4,5,8,5,2,4,2];
+        // let sum = 0
+        // for(let i=3; i<=7; i++)
+        // {
+        //  sum = sum + arr[i]  ; 
+        // }
+        // console.log(sum);
+
+
+        // Ex-4
+        // taking starting & ending values from user 
+        let arr = [4,2,4,5,8,5,2,4,2];
+                // 0 1 2 3 4 5 6 7 8
+        let len = arr.length;
+        let start = parseInt(prompt("Enter starting Index"));
+        let end = parseInt(prompt("Enter Ending Index"));
+        // starting point should be greaterthan ending
+        // 
+        if(start<end && start>=0 && start<=7 && end>1 && end<=8)
+            {
+            let sum = 0
+            for(let i=start; i<=end; i++)
+            {
+                sum = sum + arr[i]  ; 
+            }
+            console.log(sum);
+        }
+        else{
+            console.log("Invalid Input");
+        }
+        
+        
+        
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

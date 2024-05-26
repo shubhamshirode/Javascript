@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating Multiple objects</h2>
+    
+    <script> 
+
+        // Example 1
+        function car(model, color, cc, hp, price){
+            this.model = model;
+            this.color = color;
+            this.cc = cc;
+            this.hp = hp;
+            this.price = price;
+        }
+        let car1 = new car("swift",  "white", 1350, 90, 700000);
+        console.log(car1);
+        let car2 =  new car("indica","grey",1100,80,500000);
+        console.log(car2);
+        let car3 = new car("Nexon","NevyBlue",1800,350,"15L");
+        console.log(car3);
+
+        // // Example 2
+        // function car(model, color, cc, hp, price){
+        //     this.model = model;
+        //     this.color = color;
+        //     this.cc = cc;
+        //     this.hp = hp;
+        //     this.price = price;
+
+        //     this.driveCar = function(){
+        //         console.log(`Go to car ${this.model} `);
+        //         console.log("Drive the car");
+        //     };
+
+        // }
+
+        // let car1 = new car("swift",  "white", 1350, 90, 700000);
+        // console.log(car1);
+
+        // let car2 =  new car("indica","grey",1100,80,500000);
+        // console.log(car2);
+
+        // let car3 = new car("Nexon","NevyBlue",1800,350,"15L");
+        // console.log(car3);
+
+        // console.log(car1.driveCar());
+
+    </script>
+</body>
+</html>

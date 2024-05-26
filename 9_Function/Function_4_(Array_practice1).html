@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let arr = [2, 5, 3, 2, 3, 6, 2, 7, 2, 4];
+
+        //  Task 1
+        function display(arr) {
+            for (let val of arr) 
+            {
+                console.log(val);
+            }
+        }
+        display(arr);
+
+
+        // Task 2  count how many time 2  number is present  in array
+        function count(arr){
+            let count = 0;
+            for (let val of arr){
+                if(val == 2){
+                    count ++;
+                }
+            }
+            console.log(`2 is present ${count} times`)
+        }
+        count(arr);
+
+
+        //  Task 3
+        function sum(arr){
+            let sum = 0;
+            for(let val of arr){
+                sum = sum + val;
+            }
+            console.log(sum);
+        }
+        sum(arr);        
+
+        
+        //  Task 4
+        function odd_num(arr){
+            for (let val of arr){
+                if(val % 2 != 0){
+                    console.log(val);
+                }
+            }
+        }
+        odd_num(arr);
+
+    </script>
+</body>
+
+</html>

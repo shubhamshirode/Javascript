@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Reduce</title>
+</head>
+<body>
+    <h2>Array Reduce</h2>
+    <script>
+
+        // Ex 1
+        let arr = [10,20,30,40,50];
+        let sum = arr.reduce(
+            (prev,curr)=>{
+                return prev + curr;
+            }
+        )
+        console.log(sum);
+
+        // Ex 2
+        let arr1 = [14,24,25,32,12,8,9,27,21];
+        let arr1Sum = arr1.reduce(
+            (prev,curr)=>{
+                return prev + curr;
+            }
+        )
+        console.log(arr1Sum)
+
+
+    </script>
+</body>
+</html>

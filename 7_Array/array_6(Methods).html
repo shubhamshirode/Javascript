@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic Array Methods</h2>
+    <h3>Important Properties :-</h3>
+    <p>property does not have brackets</p>
+    <ul>
+        <li>length</li>
+    </ul>
+    <h3>Methods :-</h3>
+    <p>methods have brackets</p>  
+    <ol>
+        <li>toString()</li>
+        <li>at()</li>
+        <li>join()</li>
+        <li>push()</li>
+        <li>pop()</li>
+        <li>shift()</li>
+        <li>unshift()</li>
+        <li>concat()</li>
+        <li>slice()</li>
+        <li>splice()</li>
+    </ol>
+    <script>
+        // let arr = [2,17,33,15,12,6,8,14]
+        // //         0  1  2  3  4 5 6  7
+        
+        // // length is property
+        // // 
+        // let len = arr.length;
+        // console.log(len);
+
+        // // it converts array into string
+        // // toString()
+        // let str = arr.toString();
+        // console.log(str);
+
+        // // at()
+        // // it print the array value 
+        // console.log(arr.at(2)); //same--> console.log("arr[2]")
+
+
+        // // join()
+        // //  it join the array value into string with separator
+        // let str2 = arr.join("*");
+        // console.log(str2);
+
+
+        // // push()
+        // // it add the value to array at last
+        // arr.push(71);
+        // console.log(arr);
+        
+
+        // // pop()
+        // // it removes the last value of array
+        // arr.pop();
+        // console.log(arr);
+
+
+        // // shift()
+        // // it removes first value of array.
+        // // it wii shift the array values to left side.
+        // arr.shift()
+        // console.log(arr);
+
+
+        // // unshift()
+        // // it adds the value to start of array.
+        // arr.unshift(180);
+        // console.log(arr);
+
+
+        // // concat()
+        // //it merge 1st & 2nd array & make new array 
+        // // it return new array
+        // let a = [1,2,3,4,5];
+        // let b = [9,8,7,6,5];
+        // console.log(a);
+        // console.log(b);
+        // let c = a.concat(b);
+        // console.log(c);
+
+        // // slice()
+        // // it cuts the array into different parts
+        // // slice(starting_index , ending_index)
+        // // slice(2,6) --> it will print values of index (2,3,4,5)
+        // arr.slice(2, 5);
+        // console.log(arr.slice(2, 5));
+
+
+        // // copyWithin() (not imp)
+        // // copies array elements to position in an array
+        // // copyWithin(copy_at_index_value , copy_the_array_values_of_index_value )
+        // arr.copyWithin(3,0);
+        // console.log(arr);
+
+
+        // splice()
+        // it add & Delet elemnts of array at a same time
+        // it has 3 positions
+        // 1st --> where new element to be added
+        // 2nd --> how many array values to be removed
+        // 3rd --> what to add (value to be added)
+
+        // splice()
+
+        let fruits = ["banana","apple","orange","kiwi"];
+        console.log(fruits);
+
+        // // type 1 add
+        // // adding 1 elements
+        // fruits.splice(2,0,"mango");
+        // console.log(fruits);
+
+        // // adding multiple elements at a time
+        // fruits.splice(2,0,"Dragon","Guava","Grapes");
+        // console.log(fruits);
+
+        // // type 2 remove
+        // // remove how many elements to be remove (give value to 2nd position)
+        // // from index 0 delete 2 values
+        // // 1st two values are removed
+        // fruits.splice(0,2);
+        // console.log(fruits);
+
+
+        // // type 3 
+        // //  add & remove at a time
+        // let fruits1 = ["banana","apple","orange","kiwi"];
+        // fruits1.splice(1,2,"leechi","cherry","pineapple");
+        // console.log(fruits1);
+
+    </script>
+</body>
+</html>

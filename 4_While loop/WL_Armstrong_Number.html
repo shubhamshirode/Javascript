@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("Enter The Number")); // take the number from user       
+        let num = number; 
+        let rem,cube;
+        let sum=0;
+        
+        let i=1;
+        while(num>0){
+          rem = num%10; // reminder of number
+          cube = rem * rem *rem; //cube of number
+          sum = sum + cube; // Addition of cube 
+
+          num= parseInt(num/10); // to make number small
+          i++;
+        }
+        if(number == sum){
+          console.log("Number Is Armstrong Number");
+        }
+        else{
+          console.log("Number is Not Armstrong Number");
+        }
+    </script>
+</body>
+</html>

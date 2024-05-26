@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event_handling.css">
+</head>
+<body>
+
+    <!-- Inline javascript code -->
+    <button onclick="console.log('Clicked...')">Click Me</button>
+    <div onclick="console.log('Div Was clicked....')">
+        <p>onclick event</p>
+    </div>
+    <div onmouseover="console.log('Dont Touch Me')">
+        <p>onmouseover event</p>
+    </div>
+
+    <!-- External javascript code -->
+
+    <button id="button1">Message</button>
+    <button id="button2">Event</button>
+    <button id="button3">Event-Call</button>
+    <button id="button4">Change Me</button><br>
+    <br>
+
+    <!-- Event listner -->
+
+    <!-- Adding event listner -->
+    <button id="button5">event-listner 1</button>
+    <button id="button6">event-listner 2</button>
+    <!-- Removing Event listner -->
+
+    <script src="event_handling.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let num = parseInt(prompt("Enter the number"));
+        let num = 5;
+
+        document.write("Type 1 <br><br>");
+        for (let i = 1; i <= num; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("* ");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br> type 2  <br><br>");
+        for (let i = 1; i <= num; i++) {
+            for (let j = num; j >= i; j--) {
+                document.write("* ");
+            }
+            document.write("<br>");
+        }
+
+        // // // above code can be written in this way also
+        // // document.write("<br> Type 2  <br><br>");
+        // // for (let i = num; i >= 1; i--) {
+        // //     for (let j = 1; j <= i; j++) {
+        // //         document.write("* ");
+        // //     }
+        // //     document.write("<br>");
+        // // }
+
+
+        document.write("Type 3 <br><br>");
+        for (let i=1; i<=num; i++) 
+        {
+            for (let j=1; j<=num-i+1; j++) 
+            {
+                document.write("&nbsp");
+            }
+            for(let k=1; k<=i; k++){
+                document.write("*")
+
+            }
+            document.write("<br>");
+        }
+
+
+        document.write("<br> Type 4 <br><br>");
+        for (let i=1; i<=num; i++) 
+        {
+            // document.write("&nbsp ")
+            for(let k=1; k<=i; k++)
+            {
+                document.write("&nbsp");
+            }
+            for (let j=num; j>=i; j--) 
+            {
+                document.write("*")
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

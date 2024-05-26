@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Function Basic Codes</h2>
+    <script>
+
+        function sum(num1,num2){
+            ans = num1 +num2;
+            console.log(`Addition of ${num1} & ${num2} is ${ans}`);
+        }
+       
+        function sub(num1,num2){
+            ans = num1 - num2;
+            console.log(`Substraction of ${num1} & ${num2} is ${ans}`);
+        }
+
+        function mult(num1,num2){
+            ans = num1 * num2;
+            console.log(`Multiplication of ${num1} & ${num2} is ${ans}`)
+        }
+
+        function div(num1,num2){
+            ans = num1 / num2;
+            console.log(`Division of ${num1} & ${num2} is ${ans}`)
+        }
+
+        sum(10,20);
+        sub(12,9);
+        mult(5,4);
+        div(12,3);
+
+
+        // Que 1
+        function square(num){
+            sq = num*num;
+            console.log(`Square of ${num} is ${sq}`);
+            }
+
+        square(7);
+
+        //  Que 2
+        function chek(num){
+            if(num%2==0){
+                console.log(`Number is Even`);
+            }
+            else{
+                console.log(`Number is Odd`);
+            }
+        }
+        chek(71);
+
+        // Que 3
+        function rect(len,bre){
+            area = len * bre ;
+            console.log(`Area of rectangle is ${area}`);
+        }
+        rect(5,7)
+
+        // Que 4
+        function percent(price){
+            result = price * 18% - 100
+            console.log(`${result}`);
+        }
+        percent(100);
+
+        // Que 5
+        function table(num){
+            for(let i=1;i<=10;i++){
+                result = num * i;
+                console.log(`${num} * ${i} = ${result}`);
+            }
+        }
+        table(3);
+
+        // Que 6
+        function add(num1,num2,num3){
+            sum = num1+num2+num3;
+            console.log(`${sum}`)
+        }
+        add(10,20,30);
+
+        //Que 7
+        function sumAll(num){
+            let count=0;
+            for(let i=1;i<=num;i++){
+                count = count + i;
+            }
+            console.log(`${count}`)
+        }
+        sumAll(10);
+
+        // Que 8
+        function vote(age){
+            if(age>=18){
+                console.log(`Person is Elgible to vote`);
+            }
+            else{
+                console.log(`Person is not elgible to vote`);
+            }
+        }
+        vote(25);
+
+        // Que 9
+        function chekNum(num){
+            if(num>0){
+                console.log(`Number is Positive`);
+            }
+            else{
+                console.log(`Number is Negative`);
+            }
+        }
+        chekNum(-2);
+        chekNum(4);
+
+        //Que 10 leep year
+        function leepYear(year){
+            if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+            console.log(year + ' is a leap year');
+            } 
+            else {
+            console.log(year + ' is not a leap year');
+            }
+
+        }
+        leepYear(2020);
+        leepYear(2023);
+
+
+    </script>
+</body>
+</html>

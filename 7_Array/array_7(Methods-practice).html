@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>Array Methods
+        Question:-
+        1. retrive the element at 4th index.
+        2. create a string from above array which is separated by :
+        3. add Banglore at the end of the array
+        4. add Delhi to the first index
+        5. remove "Ratnagiri"
+        6. remove "Mumbai", "nashik" 
+        7. add "Jaiypur","Surat","Indore" at index 1
+        8. replace "pune" with "Panji"
+    </pre>
+    <script>
+        // let city = ["pune","Mumbai","Nashik","Nagpur","ratnagiri"];
+        // console.log(city);
+
+        // // 1
+        // console.log(city[3]);
+        // // 2
+        // console.log(city.join(":"));
+        // // 3
+        // city.push("Banglore");
+        // console.log(city);
+        // // 4
+        // city.unshift("Delhi");
+        // console.log(city);
+        // // 5
+        // city.splice(5,1);
+        // console.log(city);
+        // // 6
+        // city.splice(2,2);
+        // console.log(city);
+        // // 7
+        // city.splice(1,0,"Jaipur","Surat","Indore");
+        // console.log(city);
+        // //8
+        // city.splice(4,1,"Panji");
+        // console.log(city);
+
+
+        // Example 2
+
+
+        let arr = ["pen","book","phone","mouse","bottle"];
+        console.log(arr);
+
+        // 1
+        console.log(arr.at(2)) // console.log(arr[3]);  
+
+        //2
+        console.log(arr.join("-"));
+
+        //3
+        arr.pop();
+        console.log(arr);
+
+        // 4
+        arr.push("remote");
+        console.log(arr);
+
+        //5
+        arr.shift();
+        console.log(arr);
+
+        //6
+        arr.unshift("bag");
+        console.log(arr);
+
+        //7
+        arr.splice(1,1);
+        console.log(arr);
+
+        //8
+        arr.splice(1,2);
+        console.log(arr);
+
+        //9
+        arr.splice(2,0,"Watch")
+        console.log(arr);
+
+        //10
+        arr.splice(1,1,"chair")
+        console.log(arr);
+
+        //11
+        let brr = ["honda","suzuki","BMW"];
+        let crr = arr.concat(brr)
+        console.log(crr);
+
+        //12
+        // crr.slice(2,5);
+        console.log(crr.slice(2,5));
+
+
+    </script>
+</body>
+</html>

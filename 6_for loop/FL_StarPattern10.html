@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star PAttern 10</title>
+</head>
+<body>
+    <h2>Pyramid</h2>
+    <script>
+        // // manual code
+        // // j loop is for space
+        // // k loop is for stars
+
+        // for(let j=1; j<=3; j++){
+        //     document.write("&nbsp");
+        // }
+        // for(let k=1; k<=1; k++){
+        //     document.write("* ")
+        // }
+        // document.write("<br>");
+
+
+        // for(let j=1; j<=2; j++){
+        //     document.write("&nbsp");
+        // }
+        // for(let k=1; k<=2; k++){
+        //     document.write("* ");
+        // }
+        // document.write("<br>");
+
+
+
+        // for(let j=1; j<=1; j++){
+        //     document.write("&nbsp");
+        // }
+        // for(let k=1; k<=3; k++){
+        //     document.write("* ");
+        // }
+        // document.write("<br>");
+
+
+        // for(let j=1; j<=0; j++){
+        //     document.write("&nbsp");
+        // }
+        // for(let k=1; k<=4; k++){
+        //     document.write("* ");
+        // }
+        // document.write("<br>");
+
+
+            // Logic 
+
+        for (let i=1; i<=5; i++)
+        {
+            for(let j=5; j>=i; j--)
+            { 
+                document.write("&nbsp");
+            }
+            for(let k=1; k<=i; k++)
+            {
+                    document.write("* ");
+                }
+            document.write("<br>")
+        }
+
+        let num=5;
+        for (let i=1; i<=num; i++) 
+        {
+            for (let j=1; j<=num-i; j++) 
+            {
+                document.write("&nbsp");
+            }
+            for(let k=1; k<=i; k++){
+                document.write("* ")
+            }
+            document.write("<br>");
+        }
+
+
+    </script>
+</body>
+</html>

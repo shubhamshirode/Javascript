@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array filter</title>
+</head>
+<body>
+    <h2>Array filter</h2>
+    <script>
+        let arr = [14,24,25,32,12,8,9,27,21];
+        // Ex 1
+        arr = arr.filter(
+            (val)=>{
+                if(val%5==0 || val%7==0){
+                    return val;
+                }
+            }
+        )
+        console.log(arr);
+
+
+        // // Ex 2
+        // arr = arr.filter(
+        //     (val) => {
+        //         return val>15;
+        //         //  if(val>15){
+        //         //     return val;
+        //         // }
+        //     }
+        // )
+        // console.log(arr);
+
+
+        // // Ex 3
+        // let brr =  arr.filter(
+        //     (val) => {
+        //         return val %2 != 0;
+        //         // if(val%2!=0){
+        //         //     return val;
+        //         // }
+        //     }
+        // )
+        // console.log(brr);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

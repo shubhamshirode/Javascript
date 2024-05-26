@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // // Ex-1 
+        // // print all the index values whose arr values are less than 10
+        // let arr = [16,22, 7,11, 8, 3, 5,14, 6];
+        // //index-val 0  1  2  3  4  5  6  7  8 
+        // let len = arr.length;
+        // for(let i=0; i<len; i++ )
+        // {
+        //     if(arr[i]<10)
+        //     {
+        //         console.log(i);
+        //     }
+        // }
+
+
+        // // Ex-2
+        // // print all even values/element
+        // let arr = [16,22,7,11,8,3,5,14,6];
+        // let len = arr.length;
+        // for(let i=0; i<len; i++ )
+        // {
+        //     if(arr[i]%2==0)
+        //     {
+        //         console.log(arr[i]);
+        //     }
+        // }
+
+
+        // // Ex- 3
+        // // print all index value of even values
+        // let arr = [16,22,7,11,8,3,5,14,6];
+        // let len = arr.length;
+        // for(let i=0; i<len; i++ )
+        // {
+        //     if(arr[i]%2==0)
+        //     {
+        //         console.log(i);
+        //     }
+        // }
+
+
+        // // Ex- 4
+        // // print the sum of all arr values
+        // let arr = [16,22,7,11,8,3,5,14,6];
+        // let len=  arr.length;
+        // let sum= 0;
+        // for(let i=0; i<len; i++)
+        // {
+        //     sum = sum + arr[i];
+        // }
+        // console.log(sum);
+
+
+        // // Ex 5
+        // // print the sum of all arr values which are even
+        // let arr = [16,22,7,11,8,3,5,14,6];
+        // let sum = 0;
+        // let len = arr.length;
+        // for(let i=0; i<len; i++ )
+        // {
+        //     if(arr[i]%2==0)
+        //     {
+        //         sum = sum + arr[i];
+        //     }
+        // }
+        // console.log(sum);
+
+        // // Ex 6
+        // // print the sum of all index number which are even
+        // let arr = [16,22,7,11,8,3,5,14,6];
+        // let sum = 0;
+        // let len = arr.length;
+        // for(let i=0; i<len; i++ )
+        // {
+        //     if(i%2==0)
+        //     {
+        //         sum = sum + arr[i];
+        //     }
+        // }
+        // console.log(sum);
+        
+        // // Ex 7
+        // // sum of even values and odd values
+        // let arr = [16,22,7,11,8,3,5,14,6];
+        // let Even_sum = 0;
+        // let Odd_sum = 0;
+        // let len = arr.length;
+        // for(let i=0; i<len; i++ )
+        // {
+        //     if(arr[i]%2==0)
+        //     {
+        //         Even_sum = Even_sum + arr[i];
+        //     }
+        //     else{
+        //         Odd_sum = Odd_sum +arr[i];
+        //     }
+        // }
+        // console.log("Even Values sum is :"+ Even_sum);
+        // console.log("Odd Value sum is : " + Odd_sum);
+
+
+
+        // Ex 8
+        // take the input from user and search it in arr if it is there print the message
+
+        let arr = [16,22,7,11,8,3,5,14,6];
+        let len = arr.length;
+        let flag = 0;
+        
+        let num = prompt("Enter the number");
+        for(let i=0; i<len; i++ )
+        {
+            if(arr[i] == num)
+            {
+                console.log("Element found");
+                flag = 1;
+                break;
+            }
+        }
+        if(flag==0){
+            console.log("Element not found");
+        }
+
+        // flag is used to chek that the number is there in array or not, firstly keep flag = 0 if num is found than make flag=1.it is usefull to print the message that number is not present in array
+           
+           
+
+    </script>
+</body>
+</html>

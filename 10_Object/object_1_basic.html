@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Example 1 
+        // let car ={
+        //     brand:"Honda",
+        //     model:"City",
+        //     color:"White",
+        //     cc:1200,
+        //     year : 2019,
+        //     price:60000,
+        //        // function declaring 
+        //     openDoor : function(){
+        //         console.log("opening door.....");
+        //     },
+        //     drive : function(){
+        //         console.log("Driving car.....");
+        //     },
+        //     horn:function(){
+        //         console.log("peep peep......");
+        //     }
+        // };
+
+        // console.log(car); // prints all the values of car object
+        // console.log(car.brand); // accessing brand variable of car using . operator
+        // console.log("Car Brand :"+car["brand"]); // accessing brand variable of car using square brackets like array
+        // console.log("Car Model : "+car.model);
+        // console.log(`Car Color : ${car.color}`);
+        // console.log(`Car CC : ${car.cc}`);
+        // car.openDoor();
+        // car.drive();
+        // car.horn();
+        
+
+        // Example 2
+        let char = {
+            Name:"Micheal",
+            Height:"6ft",
+            Weight:"85kg",
+            SkinTone:"brown",
+            Running_Stamina:"6.4km/hr",
+
+            walk : function(){
+                console.log("Walking.....");
+            }, 
+            run : function(){
+                console.log("Running Fast.......");
+            },
+            left : function(){
+                console.log("Turning Left side...");
+            },
+            right : function(){
+                console.log("Turning right side....");
+            },
+            backword : function(){
+                console.log("Move Back Side......");
+            },
+            jump : function(){
+                console.log("Jumping on Same Spot.....");
+            }
+        }
+
+        console.log(char);
+        console.log(char.Name);
+        console.log(char.Height);
+        console.log(char.Weight);
+        console.log(char.SkinTone);
+        console.log(char.Running_Stamina);
+        char.left();
+        char.right();
+        char.jump();
+        char.backword();
+        char.run();
+    </script>
+</body>
+</html>

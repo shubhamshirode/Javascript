@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculator using Switch case</h2>
+
+<script>
+    console.log("Calculator");
+    console.log("1.Addition");
+    console.log("2.Substraction");
+    console.log("3.Multiplication");
+    console.log("4.Division");
+
+    var num1=10 , num2=5 ;
+    var choice = 1;
+
+    switch(choice){
+        case 1: var sum = num1 + num2;
+                console.log("The Addition of numbers is :" + sum);
+                break;
+        
+        case 2: var sub = num1 - num2;
+                console.log("The Subtraction of numbers is :" + sub);
+                break;
+
+        case 3: var mult = num1 * num2;
+                console.log("The Multiplication of numbers is :" + mult);
+                break;
+
+        case 4: var div = num1 / num2;
+                console.log("The Division of numbers is :" + div);
+                break;
+
+        default: console.log("Invalid Choice");
+    }
+
+</script>
+
+    
+</body>
+</html>

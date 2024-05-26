@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Calculator using if-else</h2>
+    <script>
+        console.log("Calculator");
+        console.log("1.Addition");
+        console.log("2.Substraction");
+        console.log("3.Multiplication");
+        console.log("4.Division");
+
+        var num1=10 , num2=5 ;
+        var choice = parseInt(prompt("Enter your Choice"));
+
+        if(choice == 1){
+            var sum = num1 + num2;
+            console.log("The Addition of numbers is :" + sum);
+        }
+        else if(choice == 2){
+            var sub = num1 - num2;
+            console.log("The Subtraction of numbers is :" + sub);
+        }
+        else if(choice == 3){
+            var mult = num1 * num2;
+            console.log("The Multiplication of numbers is :" + mult);
+        }
+        else if(choice == 4){
+            var div = num1 / num2;
+            console.log("The Division of numbers is :" + div);
+        }
+        else{
+            console.log("Invalid choice");
+        }
+    </script>
+</body>
+</html>

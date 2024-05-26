@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Practice</title>
+</head>
+<body>
+    <script>       
+        let str = "     Aaj blue hai pani pani pani";
+        console.log(str);
+
+        let result;
+
+        //1
+        result = str.length;
+        console.log("length of string :" + result);
+
+        // 2 
+        result = str.toUpperCase();
+        console.log(result);
+
+        //3
+        let str1 = "  by Yo Yo Honey Singh";
+        result = str.concat(str1);
+        console.log(result);
+        
+        //4
+        result = str1.trim();
+        console.log(result);
+
+        //5
+        result = str.slice(5,17);
+        console.log(result);
+
+        //6
+        result = str.slice(18);
+        console.log(result);
+
+        //7
+        let arr = str.split(" ");
+        console.log(arr);
+
+        //8
+        result = (str+" ").repeat(3);
+        console.log(result);
+
+        // 9
+        result =str.replaceAll("pani","money")
+        console.log(result);
+
+        // 10 
+        result = str.charAt(11);
+        console.log(result);
+
+
+
+
+    </script>
+</body>
+</html>

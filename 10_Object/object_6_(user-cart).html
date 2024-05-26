@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function product(l_name, l_price, l_rating, l_reviews){
+        this.name = l_name;
+        this.price = l_price;
+        this.rating = l_rating;
+        this.reviews = l_reviews;
+    }
+
+    let product1 = new product("Mouse","2000",4.8,1500);
+    let product2 = new product("Watch","4500",3.8,1700);
+    let product3 = new product("Shoes","3000",4.9,3200);
+    let product4 = new product("Shirt","1100",4.5,1900);
+    let product5 = new product("T-shirt","700",4.2,2500);
+    let product6 = new product("TV","2000",4.8,4500);
+    let product7 = new product("Headphone","900",3.9,1600);
+    let product8 = new product("Mobail","25000",4.9,6000);
+    let product9 = new product("Jacket","1200",4.5,800);
+    let product10 = new product("Sun-Glass","700",3.9,1500);
+    
+    function user(name,phone,email,pincode){
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+        this.pincode = pincode;
+        this.cart = [];
+
+        this.addToCart = function(product){
+            this.cart.push(product);
+        }
+        
+        this.display_cart = function(){
+            console.log(this.cart);
+        }
+    }
+
+    let user1 = new user("Rajesh",9584763215,"rajesh@gmail.com",411048);
+    user1.addToCart(product1);
+    user1.addToCart(product6);
+    user1.display_cart();
+
+    let user2 = new user("Rajesh",9584763215,"rajesh@gmail.com",411048);
+    user2.addToCart(product8);
+    user2.addToCart(product7);
+    user2.addToCart(product4);
+    user2.display_cart();
+
+    let user3 = new user("Rajesh",9584763215,"rajesh@gmail.com",411048);
+    user3.addToCart(product10);
+    user3.display_cart();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">    
+
+</head>
+<body>
+    <!-- 
+        IMP -> onsubmit attribute in that return is important 
+    form() -> it is function (we can give any name).
+    in JS file all logic is written in form() function. 
+-->
+
+
+    <div id="form-container">
+        <h2>Form Validation</h2>
+        <form action="" onsubmit="return form()" class="form_text">
+            <input type="text" name="" id="username" placeholder="Enter Your Name">
+            <span class="error" id="user_error"></span>
+            <input type="password" id="password" placeholder="Password">
+            <span class="error" id="password_error"></span>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>

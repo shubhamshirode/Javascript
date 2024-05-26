@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>for Each variable</h2>
+    <script>
+
+        let arr = [14,24,25,32,12,8,9,27,21];
+        
+        // Ex 1
+        let arrowNum = (val)=>{
+                    if(val % 5 == 0 || val % 7 == 0){
+                    console.log(val);
+                }
+            }
+        arr.forEach(arrowNum);
+
+
+        // Ex 2
+        // if the value is even mult it by 2 or mult by 3
+        let arrowMult = (val)=>{
+                if(val%2==0){
+                    console.log(val*2);
+                }
+                else{
+                    console.log(val*3);
+                }
+            }
+        arr.forEach(arrowMult);
+
+
+        let arr1 = ["amol", "lithun", "keshav", "preeti", "riya", "vinayak"];
+        
+        // Ex 3
+        // print the word from array whose length is 6
+
+        let arrowChek = (val) => {
+            if(val.length == 6){
+                    console.log(val);
+                }
+        }
+
+        arr1.forEach(arrowChek)
+
+
+        // //  Ex 4
+        // // convert array words into upper case
+            let arrowConvert = (val)=>{
+                    console.log(val.toUpperCase());
+                }
+
+            arr1.forEach(arrowConvert)
+
+
+
+
+    </script>
+</body>
+</html>

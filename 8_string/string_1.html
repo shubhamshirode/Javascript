@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JavaScript</title>
+</head>
+<body>
+    <h2>String Function in JavaScript</h2>
+    <p>length is propertie</p>
+    <ul>
+        <li>lenght</li>
+        <li>charAt()</li>
+        <li>slice()</li>
+        <li>substring()</li>
+        <li>toUpperCase()</li>
+        <li>toLowerCase()</li>
+        <li>concat()</li>
+        <li>trim()</li>
+        <li>repeat()</li>
+        <li>replace() </li>
+        <li>split()</li>
+    </ul>
+    <script>
+        let str = "Railway";
+            //     0123456
+           
+
+            // 1 lenght
+            console.log(str.length);
+
+            // 2 charAt()
+            // return the character at the specified index
+            console.log(str.charAt(5));
+            
+            // 3 slice():
+            // it return a part of string
+            // slice(starting_point , ending_point);
+            //  if ending point is not given it will print all the remaing part from starting point
+            console.log(str.slice(2,5));
+            console.log(str.slice(2));
+
+            // let str = "R  a  i  l  w  a  y";
+                        //  -7 -6 -5 -4 -3 -2 -1
+            console.log(str.slice(-2)); // it will print last 2 elements
+            console.log(str.slice(-5));
+            console.log(str.slice(-5,-2));
+            console.log(str.slice(-2,-5));
+
+            // 4 substring()
+            console.log(str.substring(2,6)); //ilwa
+
+            // 5 toUpperCase()
+            let str1 = "mouse";
+            console.log(str1.toUpperCase()); //
+
+            // 6 toLowerCase()
+            let str2 = "KEYBOARD";
+            console.log(str2.toLowerCase()); //
+
+            // 7 concat() adding both string
+            console.log(str1.concat(str2)); //
+
+            // 8 trim() it removves white space from string 
+            let str3 = "   Hello     Everyone..    ";
+            console.log(str3.trim()); // removes spaces from start and end
+            console.log(str3.trimStart()); // removes space from start of string
+            console.log(str3.trimEnd()); // removes space from ed of string
+
+            // 9 repeat()
+            let str4 = "Hello";
+            console.log(str4.repeat(5));
+
+            // 10 replace() it replace string content  
+            let str5 = " Hello Everyone Bye Bye ";
+            console.log(str5.replace("Bye" , "Come"));
+            console.log(str5.replaceAll("Bye" , "Come"));
+
+            // 11 split() it converts string to array
+            let str6 = "Hum Dil De Chuke Sanam";
+            let arr = str6.split(" ");
+            console.log(arr);
+
+            let str7 = "Hum,Dil,De,Chuke,Sanam";
+            arr = str7.split(",");
+            console.log(arr);
+
+    </script>
+</body>
+</html>

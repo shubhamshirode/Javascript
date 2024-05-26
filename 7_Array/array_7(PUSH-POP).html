@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>PUSH and POP</h2>
+    <script>
+        // push() :- add the value to array (at last)
+        // pop() :- remove value from array (from last) 
+
+        // // basic
+        // let arr = [10,20,30,40,50];
+        // arr.push(60);
+        // arr.push(70);
+        // console.log(arr);
+
+        // arr.push(90,100,110);
+        // console.log(arr);
+
+        // arr.pop();
+        // arr.pop();
+        // console.log(arr);
+
+
+        // //Ex-1
+        // // push 1 -10 value to arr
+        // let arr = [];
+        // for (let i=1; i<=10; i++)
+        // {
+        //     arr.push(i);
+        // }
+        // console.log(arr);
+
+
+        // // Ex-2
+        // // push even values between range 
+        // let arr =[];
+        // for (let i=120; i<=137; i++){
+        //     if(i%2 == 0){
+        //         arr.push(i);
+        //     }
+        // }
+        // console.log(arr);
+
+
+        // // Ex-3
+        // let arr =[12,11,15,8,4,16,7,9,8];
+        // let even_arr = [];
+        // let odd_arr = [];
+        // for(let val of arr)
+        // {
+        //     if(val%2==0)
+        //     {
+        //         even_arr.push(val);
+        //     }
+        //     else{
+        //         odd_arr.push(val);
+        //     }
+        // }
+        // console.log(even_arr);
+        // console.log(odd_arr);
+
+
+        // // Ex-4
+        // // addition of array
+        // let arr = [2,7,3,5,2];
+        // let brr = [13,4,6,12,8];
+        // let crr= [];
+        // let sum=0
+        // for(let i=0;i<5;i++)
+        // {
+        //     sum = arr[i] + brr[i];
+        //     crr.push(sum);
+        // }
+        // console.log(crr);
+
+
+        // // EX-5
+        // // addition of both array and if addition is less then 12 then print to thirs array 
+        // let arr = [2,7,3,5,2];
+        // let brr = [13,4,6,12,8];
+        // let crr= [];
+        // let sum;
+        // for(let i=0;i<=5;i++)
+        // {
+        //     sum=arr[i]+brr[i];
+        //     if(sum<12){
+        //         crr.push(sum);
+        //     }
+        // }
+        // console.log(crr);
+
+
+        // // Ex-6
+        // // do the sum of array values & print even & odd sum of arrays
+        // let arr = [2,7,3,5,2];
+        // let brr = [13,4,6,12,8];
+        // let e_sum = [];
+        // let o_sum = [];
+        // let sum;
+        // for(let i=0; i<5; i++)
+        // {
+        //     sum = arr[i] + brr[i];
+        //     if(sum%2==0)
+        //     {
+        //         e_sum.push(sum);
+        //     }
+        //     else{
+        //         o_sum.push(sum);
+        //     }
+        // }
+        // console.log("Sum of Even values :" + e_sum);
+        // console.log("Sum of odd values :" + o_sum);
+
+        
+        // // Ex-7 
+        // // add the second array to first
+        // let arr =[2,7,3,5,2];
+        // let brr =[13,4,6,12,8];
+        // for(let val of brr){
+        //     arr.push(val);
+        // }
+        // console.log(arr);
+        
+    </script>
+</body>
+</html>

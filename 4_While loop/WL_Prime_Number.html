@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Prime Number</h2>
+    <p>The Number which is only Divisible by 1 and itself.</p>
+    <pre>
+        0 ,1 & negative numbers are not prime number, so use num is less then 2 for it.
+        i=2 because from 2 we have to chek that number is divisible or not,
+        if number is divisible by 2 then it is not prime number.....
+
+        i is less then number because number is divisible by itself.
+    </pre>
+
+    <script>
+
+        let num = parseInt(prompt("Enter the Number"));
+        if(num < 2){
+            console.log("It is Not Prime Number");
+        }
+        else{
+            let flag = 0;
+            let i = 2;
+
+            while(i<num){
+                if(num%i==0){
+                    flag = 1;
+                    break;
+                }
+                i++;
+            }
+            if(flag == 0){
+                console.log("It is a Prime Number");
+            }
+            else{
+                console.log("It is Not Prime Number");
+            }
+        }
+    </script>
+</body>
+</html>

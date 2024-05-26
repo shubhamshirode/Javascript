@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function product(l_name, l_price, l_rating, l_reviews){
+        this.name = l_name;
+        this.price = l_price;
+        this.rating = l_rating;
+        this.reviews = l_reviews;
+    }
+
+    let product1 = new product("Mouse","2000",4.8,1500);
+    let product2 = new product("Watch","4500",3.8,900);
+    let product3 = new product("Shoes","3000",4.9,2500);
+    let product4 = new product("Shirt","1100",4.5,1200);
+    let product5 = new product("T-shirt","700",4.2,2000);
+    let product6 = new product("TV","22000",4.8,2200);
+    let product7 = new product("Headphone","900",3.9,5000);
+    let product8 = new product("Mobail","25000",4.9,6000);
+    let product9 = new product("Jacket","1200",4.5,700);
+    let product10 = new product("Sun-Glass","2100",3.9,1400);
+
+    let arr =[product1,product2,product3,product4,product5,product6,product7,product8,product9,product10];
+
+    console.log("Product less than 3500")
+    // logic for price less than 3500
+    for (let i=0;i<arr.length;i++){
+        if(arr[i].price<3500){
+            console.log(arr[i]);
+        }
+    }
+    console.log("product price more than 3500")
+    let result = arr.filter(
+        (product)=>{
+            return product.price>3500;
+        }
+    )
+    console.log(result)
+
+    console.log("Products between 2000 - 5000")
+    // print the product in the range of 2000 - 5000 with fo-of loop
+    for(let prod of arr){
+        if(prod.price>=2000 && prod.price<=5000){
+            console.log(prod);
+        }
+    }
+
+    console.log()
+
+
+
+    </script>
+</body>
+</html>

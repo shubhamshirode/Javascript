@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            height: 400px;
+            /* width: 400px; */
+            border: 1px solid black;
+            row-gap: 2rem;
+            column-gap: 2rem;
+            padding: 1rem;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>BackgroundColor changing Using - (addEventListner)</h2>
+    <div id="container">
+        <button id="btn1">RED</button> 
+        <button id="btn2">ORANGE</button>
+        <button id="btn3">YELLOW</button>
+        <button id="btn4">NAVY</button>
+        <button id="btn5">gray</button>
+        <button id="btn6">brown</button>
+        <button id="btn7">purple</button>
+        <button id="btn8">pink</button>
+        <button id="btn9">green</button>
+        <button id="btn10">Lightgreen</button>
+        <button id="btn11">blue</button>
+        <button id="btn12">Aqua</button>
+    </div>
+    <script src="2_btn.js"></script>
+</body>
+</html>

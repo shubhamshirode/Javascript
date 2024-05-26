@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array map</title>
+</head>
+<body>
+    <h2>Array Map</h2>
+    <ul>
+        <li>forEach doesnot return any thing</li>
+        <li>Map return some thing</li>
+    </ul>
+    <script>
+        // let arr = [1,2,3,4,5];
+
+        // let brr = arr.map(
+        //     (val) => {
+        //         return val*2;
+        //     }
+        // )
+        // console.log(brr);
+
+        // Task 1
+
+        let arr1 = [14,24,25,32,12,8,9,27,21];
+
+        arr1 = arr1.map(
+            (val)=>{
+                if(val%5==0 || val%7==0){
+                    return val;
+                }
+            }
+        )
+        console.log(arr1);
+
+    </script>
+</body>
+</html>

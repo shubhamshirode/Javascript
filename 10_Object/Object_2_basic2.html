@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating objects</h2>
+    <script>
+        let product = {
+            Name:"Teffin",
+            Color:"Grey",
+            Material:"Plastic",
+            Shape:"Square",
+            Weight:"333gm",
+            Number_of_Components : "3",
+            Qty:1,
+
+            ChangeQty:function(value){
+                this.qty = value;
+            },
+            
+            addToCart : function(){
+                console.log("Added to cart");
+                console.log("Buy Now");
+            },
+
+            buy : function(){
+                console.log("Proced To Pay.....");
+                console.log("Make Payment!!!");
+            },
+            payment : function(){
+                console.log("Payment Done...");
+                console.log("Ordered Placed");
+                console.log("Order will Deliver soon...");
+            }
+
+        }
+        console.log(product);
+        console.log(`product Name : ${product.Name}`);
+        console.log(`product Color : ${product.Color}`);
+        console.log(`product Material : ${product.Material}`);
+        console.log(`product Shape : ${product.Shape}`);
+        console.log(`product Weight : ${product.Weight}`);
+        console.log(`product Number_of_Components : ${product.Number_of_Components}`);
+        console.log(`Product Quantity by default is : ${product.Qty}`);
+
+        product.addToCart();
+        product.ChangeQty(5);
+        console.log(`Quantity is changed ${product.Qty}`);
+        product.buy();
+        product.payment();
+
+
+        
+
+    </script>
+</body>
+</html>
